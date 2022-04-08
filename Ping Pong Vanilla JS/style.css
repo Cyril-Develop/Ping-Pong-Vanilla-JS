@@ -1,0 +1,62 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    padding-top: 10px;
+    background-color: black;
+}
+
+.containerScore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1400;
+    height: 60px;
+    font-size: 40px;
+}
+
+.score{
+    margin: 0 150px;
+    letter-spacing: 2px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 0 0 7px lightblue, 0 0 30px lightblue;
+}
+
+canvas{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    box-shadow: -5px -5px 7px lightblue,
+                5px 5px 7px lightblue,
+                inset -5px -5px 7px lightblue,
+                inset 5px 5px 7px lightblue;
+}
+
+button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 7px lightblue, 0 0 30px lightblue;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out
+}
+
+#btnRejouer.active{
+    visibility: visible;
+    opacity: 1;
+}
