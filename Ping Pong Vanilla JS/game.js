@@ -20,8 +20,8 @@ function startGame(){
 }
 
 //************ Variables ************/
-let gameSpeed = 7;
-let velocity = 5;
+let gameSpeed = 10;
+let velocity = 7;
 let countScoreP1 = 0;
 let countScoreP2 = 0;
 let gameOver = false;
@@ -269,9 +269,10 @@ function collisionWidthPaddleP2(){
 // Fin de partie
 function endGame(){
         if(countScoreP1 >= 10 || countScoreP2 >= 10) {
-        BG_GAME.pause();
-        GAME_OVER.play();
         gameOver = true;
+        GAME_OVER.play();
+        BG_GAME.pause();
+        BG_GAME.volume = 0;
         btnRejouer.classList.add('active');
     }
 }
