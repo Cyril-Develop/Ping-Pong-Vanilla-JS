@@ -174,7 +174,7 @@ function moveBall(){
     
 
     //************ Collision mur ************/
-    if(ball.positionX + ball.radius > canvas.width || ball.positionX < 0 + ball.radius) {
+    if(ball.positionX + (ball.radius + 5) > canvas.width || ball.positionX < 0 + (ball.radius + 5)) {
         WALL_COLLISION.play()
         ball.dx *= -1
     }
