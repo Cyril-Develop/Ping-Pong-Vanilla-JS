@@ -7,6 +7,7 @@
             <title>Ping Pong</title>
             <link rel="stylesheet" href="style.css">
             <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
         </head>
         <body>
 
@@ -15,6 +16,15 @@
             <div class="containerScore">
                 <div class="score">Joueur  1 : <span id="scoreJ1">0</span></div>
                 <div class="score">Joueur  2 : <span id="scoreJ2">0</span></div>
+            </div>
+            <div id="container_info">
+                <div id="info">
+                <img id="btnClose" src="btnclose.svg">
+                <p>Déplacer le <span id="colorP1">joueur 1</span> avec les touches "q" et "d" de votre clavier,</p>
+                <p>respectivement gauche et droite.</p>
+                <p>Déplacer le <span id="colorP2">joueur 2</span> avec les touches &#8592; et &#8594; de votre clavier.</p>
+                <p>Le premier joueur qui marque 10 points remporte la partie !</p>
+                </div>
             </div>
  
             <script src="game.js"></script>

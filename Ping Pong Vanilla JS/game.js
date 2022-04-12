@@ -6,6 +6,11 @@ const ctx = canvas.getContext('2d');
 canvas.width = 1400;
 canvas.height = 800;
 
+//animation des elements du DOM
+document.getElementById('btnClose').addEventListener('click', () => {
+    document.getElementById('info').classList.add('active')
+})
+
 const btnRejouer = document.getElementById('btnRejouer');
 btnRejouer.addEventListener('click', () => {
     location.reload()
