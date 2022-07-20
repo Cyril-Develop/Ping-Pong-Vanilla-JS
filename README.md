@@ -10,7 +10,7 @@
 - CSS
 - JS
 
-
+![GitHub repo size](https://img.shields.io/github/repo-size/Cyril-Develop/Ping-Pong-Vanilla-JS?style=for-the-badge)
 
 ## Tester le projet :
 
